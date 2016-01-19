@@ -1,0 +1,13 @@
+# put this in the same folder as the script
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# edit "wpoison" and "members" to your liking, don't forget to change the wpoison.php filename if you modified it
+# make sure the "wpoison" regex matches the "wpoison".php filename.
+#RewriteRule wpoison$ /members/wpoison.php
+#RewriteRule wpoison/(.*)$ /members/wpoison.php
+
+#suggested example:
+RewriteRule email$ /members/email.php
+RewriteRule email/(.*)$ /members/email.php
