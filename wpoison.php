@@ -87,6 +87,7 @@ print ("</BIG>\n</BODY>\n</HTML>\n");
 // end of the HTML part
 // Functions
 function randomwords($min, $max) {
+  $string = "";
   $lines = file("words"); // dictionary file
   for ($a = 0; $a <= mt_rand($min, $max); $a++) {
     $string .= str_replace("\n", '', $lines[mt_rand(1, 235880)]) . " "; // concatenate the words while removing the carriage return from them
